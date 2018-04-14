@@ -11,5 +11,10 @@ describe('App', () => {
     // Use 'expect' to make an 'assertion' about target
     expect(component).to.contain('React simple starter');
   })
+
+  it('renders a comment box', () => {
+    const component = renderComponent(App)
+    expect(component.find('.comment-box')).to.exist
+  })
 })
 
