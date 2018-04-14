@@ -5,10 +5,10 @@ export default class CommentBox extends React.Component {
   render() {
 
     return (
-      <Form>
-        <Form.TextArea />
-        <Button>Submit</Button>
-      </Form>
+      <div className='comment-box'>
+        <textarea />
+        <button>Submit</button>
+      </div>
     )
   }
 } 
