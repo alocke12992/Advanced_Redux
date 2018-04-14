@@ -1,11 +1,9 @@
 import {SAVE_COMMENT} from './types';
 
-export const saveComment = (comment) => {
+export function saveComment(comment) {
   debugger
-  return (
-    {
-      type: SAVE_COMMENT,
-      data: comment
-    }
-  )
+  return {
+    type: SAVE_COMMENT,
+    payload: comment
+  }
 }

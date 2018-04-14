@@ -9,6 +9,6 @@ describe('actions', () => {
   })
   it('has the correct return data', () => {
     const action = saveComment('New Comment')
-    expect(action.data).to.equal('New Comment')
+    expect(action.payload).to.equal('New Comment')
   })
 })
